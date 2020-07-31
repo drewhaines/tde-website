@@ -11,15 +11,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`Rowdies\:400,700`, "lato:400,700"],
+        fonts: [`Rowdies\:400,700`, "lato:400,700", "pacifico"],
         display: "swap",
       },
     },
     {
       resolve: `gatsby-plugin-mdx`,
-      options: {
-        defaultLayouts: { default: path.resolve("./src/components/layout.js") },
-      },
     },
     "gatsby-plugin-react-helmet",
     {
@@ -36,6 +33,12 @@ module.exports = {
         path: `${__dirname}/src/pages`,
       },
     },
+    {
+      resolve: "gatsby-plugin-page-creator",
+      options: {
+        path: `${__dirname}/src/pages/blogs`,
+      },
+    },
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
     {
@@ -47,7 +50,7 @@ module.exports = {
         background_color: "#323232",
         theme_color: "#663399",
         display: "minimal-ui",
-        icon: "src/images/tde_icon.png", // This path is relative to the root of the site.
+        icon: "src/images/tde_icon.jpg", // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

@@ -1,3 +1,10 @@
+:root {
+  --red: #fc5e53;
+  --yellow: #eecc02;
+  --green: #1fc173;
+  --blue: #047ae5;
+}
+
 html {
   font-family: "lato", sans-serif;
   -ms-text-size-adjust: 100%;
@@ -618,6 +625,43 @@ pre tt:after {
   content: "";
 }
 
+.padding {
+  padding: 25px;
+  max-width: 960px;
+  margin: auto;
+}
+
+.btn_success {
+  background-color: var(--green);
+}
+
+.btn_main {
+  position: absolute;
+  width: 300px;
+  top: 50px;
+  right: 100px;
+}
+
+.btn_main_cta {
+  padding: 20px 10px 22px 10px;
+  color: white;
+  border: none;
+  width: 100%;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 26px;
+  cursor: pointer;
+  transition: 0.5s;
+  outline: none;
+  -webkit-box-shadow: 3px 3px 12px -4px rgba(0, 0, 0, 0.51);
+  -moz-box-shadow: 3px 3px 12px -4px rgba(0, 0, 0, 0.51);
+  box-shadow: 3px 3px 12px -4px rgba(0, 0, 0, 0.51);
+}
+
+.btn_main_cta:hover {
+  transform: scale(1.05);
+}
+
 .nav_border {
   border-bottom: 1px solid #323232;
 }
@@ -657,48 +701,141 @@ pre tt:after {
   left: 3px;
   opacity: 0.4;
   content: "";
-  transition: all 0.5s;
+  transition: all 0.3s;
 }
 
 .nav-item:hover::before {
   opacity: 0.7;
+  height: 9px;
+  width: 101%;
 }
 
 .red::before {
-  background-color: #fc5e53;
+  background-color: var(--red);
 }
 
 .blue::before {
-  background-color: #047ae5;
+  background-color: var(--blue);
 }
 
 .green::before {
-  background-color: #1fc173;
+  background-color: var(--green);
 }
 
 .yellow::before {
-  background-color: #eecc02;
+  background-color: var(--yellow);
 }
 
 .title_grid {
   display: grid;
-  grid-template-columns: 70% 30%;
-  padding-top: 50px;
-  max-width: 960px;
+  grid-template-columns: 1fr auto;
+  max-width: 1200px;
   margin: auto;
-  padding: 25px;
-  padding-top: 50px;
+  position: relative;
+  height: 100%;
 }
 
-.drew {
-  border-radius: 100%;
+.programming {
+  width: 600px;
+  height: 400px;
+  bottom: 0px;
+  left: 0;
+  right: 100px;
+  margin-left: auto;
+  position: absolute;
+  transition: all 0.5s;
+}
+
+.title {
+  font-size: 50px;
+  margin-bottom: 60px;
+}
+
+.subtitle {
+  font-size: 26px;
+  margin-top: 0px;
+  margin-bottom: 12px;
 }
 
 .main_section {
-  background-image: url("../images/papyrus.png");
+  height: calc(100vh - 181px);
+  background-color: #f7f7f7;
+  background-image: url("../images/cubes.png");
   background-repeat: repeat;
-  height: 100vh;
-  width: 100vw;
+}
+
+.slanted {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+}
+
+.tde_logo {
+  width: 400px;
+  margin: auto;
+  transition: all 0.5s;
+}
+
+.tde_logo:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.title_wrapper {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+.show_xs {
+  display: none;
+}
+
+.highly_skilled {
+  position: relative;
+  z-index: 2;
+}
+
+.highly_skilled:after {
+  position: absolute;
+  transition: all 0.5s;
+  left: 0;
+  bottom: -2px;
+  height: 2px;
+  width: 105%;
+  margin-left: -2px;
+  background: var(--red);
+  transform: rotate(-1deg);
+  content: "";
+}
+
+.highly_skilled:hover::after {
+  transform: translate(0px, -4px) rotate(-1deg);
+}
+
+.courses {
+  margin-top: 25px;
+}
+
+.courses h1 {
+  font-size: 40px;
+  font-family: "Pacifico";
+}
+
+.course {
+  border: 1px solid grey;
+  cursor: pointer;
+  max-width: 800px;
+  padding: 40px;
+  border-radius: 3px;
+  margin: auto;
+  margin-bottom: 50px;
+  transition: all 0.5s;
+  -webkit-box-shadow: 3px 3px 12px -4px rgba(0, 0, 0, 0.51);
+  -moz-box-shadow: 3px 3px 12px -4px rgba(0, 0, 0, 0.51);
+  box-shadow: 3px 3px 12px -4px rgba(0, 0, 0, 0.51);
+}
+
+.course:hover {
+  transform: scale(1.05);
 }
 
 @media only screen and (max-width: 480px) {
@@ -706,7 +843,93 @@ pre tt:after {
     font-size: 100%;
   }
 
+  .course {
+    padding: 20px;
+  }
+
+  .course {
+    margin-bottom: 25px;
+  }
+
+  .course:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .courses {
+    margin: 0;
+  }
+
+  .courses h1 {
+    font-size: 26px;
+  }
+
+  .main_section {
+    height: calc(100vh - 156px);
+  }
+
   .nav_grid {
-    grid-gap: 30px;
+    grid-gap: 10px;
+    padding: 20px 15px;
+  }
+
+  .title_grid {
+    padding-top: 25px;
+    display: block;
+    height: 100%;
+  }
+
+  .tde_logo {
+    width: 300px;
+    margin: auto;
+  }
+
+  .programming {
+    max-width: calc(100vw - 50px);
+    height: 250px;
+    bottom: 30px;
+    right: 0px;
+    position: absolute;
+    margin: 0 auto;
+  }
+
+  .title {
+    font-size: 32px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .subtitle {
+    font-size: 22px;
+    padding: 0px 20px;
+    z-index: 3;
+    position: relative;
+  }
+
+  .title_wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .show_xs {
+    display: block;
+  }
+
+  .btn_main {
+    position: absolute;
+    top: unset;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+  }
+
+  .btn_main_cta {
+    border-radius: 0;
+  }
+
+  .btn_main_cta:hover {
+    transform: unset;
   }
 }

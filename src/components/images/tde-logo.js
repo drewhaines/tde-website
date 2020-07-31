@@ -19,7 +19,7 @@ const Image = () => (
       query {
         placeholderImage: file(relativePath: { eq: "tde_logo_long_dark.png" }) {
           childImageSharp {
-            fluid(maxWidth: 500) {
+            fluid(maxWidth: 300) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -27,11 +27,7 @@ const Image = () => (
       }
     `}
     render={(data) => (
-      <Img
-        className="tde_logo"
-        style={{ maxWidth: 500, margin: "auto" }}
-        fluid={data.placeholderImage.childImageSharp.fluid}
-      />
+      <Img className="tde_logo" fluid={data.placeholderImage.childImageSharp.fluid} />
     )}
   />
 );

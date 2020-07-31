@@ -1,7 +1,7 @@
 import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import React from "react";
-import Image from "./tde-logo";
+import Image from "./images/tde-logo";
 
 const Header = ({ siteTitle }) => (
   <div>
