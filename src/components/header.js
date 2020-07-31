@@ -5,19 +5,8 @@ import Image from "./images/tde-logo";
 
 const Header = ({ siteTitle }) => (
   <div>
-    <div
-      style={{
-        background: "#323232",
-      }}
-    >
-      <div
-        style={{
-          margin: "0 auto",
-          maxWidth: 960,
-          textAlign: "center",
-          padding: "10px",
-        }}
-      >
+    <div className="dark">
+      <div className="logo_wrapper">
         <Link
           to="/"
           style={{

@@ -3,6 +3,7 @@
   --yellow: #eecc02;
   --green: #1fc173;
   --blue: #047ae5;
+  --dark: #323232;
 }
 
 html {
@@ -663,7 +664,7 @@ pre tt:after {
 }
 
 .nav_border {
-  border-bottom: 1px solid #323232;
+  border-bottom: 1px solid var(--dark);
 }
 
 .nav_grid {
@@ -682,7 +683,7 @@ pre tt:after {
 }
 
 .nav-item {
-  color: #323232;
+  color: var(--dark);
   text-decoration: none;
   font-family: "Rowdies";
   font-size: 28px;
@@ -724,6 +725,17 @@ pre tt:after {
 
 .yellow::before {
   background-color: var(--yellow);
+}
+
+.dark {
+  background-color: var(--dark);
+}
+
+.logo_wrapper {
+  margin: 0 auto;
+  max-width: 960;
+  text-align: center;
+  padding: 10px;
 }
 
 .title_grid {
