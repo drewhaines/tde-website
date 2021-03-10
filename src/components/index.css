@@ -644,7 +644,9 @@ pre tt:after {
 }
 
 .btn_main_cta {
-  padding: 20px 10px 22px 10px;
+  padding: 20px 80px 22px 80px;
+  max-width: 350px;
+  margin: auto;
   color: white;
   border: none;
   width: 100%;
@@ -770,7 +772,6 @@ pre tt:after {
 }
 
 .main_section {
-  height: calc(100vh - 181px);
   background-color: #f7f7f7;
   background-image: url("../images/cubes.png");
   background-repeat: repeat;
@@ -824,7 +825,7 @@ pre tt:after {
 }
 
 .courses {
-  margin-top: 25px;
+  padding-top: 50px;
 }
 
 .courses h1 {
@@ -838,8 +839,6 @@ pre tt:after {
   max-width: 800px;
   padding: 40px;
   border-radius: 3px;
-  margin: auto;
-  margin-bottom: 50px;
   transition: all 0.5s;
   -webkit-box-shadow: 3px 3px 12px -4px rgba(0, 0, 0, 0.51);
   -moz-box-shadow: 3px 3px 12px -4px rgba(0, 0, 0, 0.51);

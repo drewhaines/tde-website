@@ -1,4 +1,5 @@
 import React from "react";
+import { jsx, Box } from "theme-ui";
 
 const courseData = [
   {
@@ -36,20 +37,20 @@ const courseData = [
 const Course = (props) => {
   const { course } = props;
   return (
-    <div className="course">
+    <Box className="course" bg="white" mx="auto" mb="40px">
       <h1>{course.title}</h1>
       <p>{course.description}</p>
-    </div>
+    </Box>
   );
 };
 
 const Courses = () => {
   return (
-    <div class="padding courses">
+    <Box class="padding courses" pt="50px" pb="1px" bg="aliceblue">
       {courseData.map((course) => (
         <Course course={course} />
       ))}
-    </div>
+    </Box>
   );
 };
 

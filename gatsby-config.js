@@ -15,6 +15,7 @@ module.exports = {
         display: "swap",
       },
     },
+    "gatsby-plugin-theme-ui",
     {
       resolve: `gatsby-plugin-mdx`,
     },
