@@ -19,7 +19,7 @@ const Image = (props) => (
       query {
         placeholderImage: file(relativePath: { eq: "drew.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 200) {
+            fluid(maxWidth: 1000) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -29,7 +29,8 @@ const Image = (props) => (
     render={(data) => (
       <Img
         {...props}
-        style={{ maxWidth: 200, margin: "auto" }}
+        imgStyle={{ objectFit: "contain", margin: 0 }}
+        className="programming"
         fluid={data.placeholderImage.childImageSharp.fluid}
       />
     )}

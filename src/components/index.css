@@ -10,6 +10,7 @@ html {
   font-family: "lato", sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  white-space: pre-wrap;
 }
 body {
   margin: 0;
@@ -872,10 +873,6 @@ pre tt:after {
 
   .courses h1 {
     font-size: 26px;
-  }
-
-  .main_section {
-    height: calc(100vh - 156px);
   }
 
   .nav_grid {
