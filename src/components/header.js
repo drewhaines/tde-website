@@ -1,7 +1,8 @@
 import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import React from "react";
-import Image from "./images/tde-logo";
+import { jsx, Box } from "theme-ui";
+import { StaticImage } from "gatsby-plugin-image";
 
 const Header = ({ siteTitle }) => (
   <div>
@@ -14,7 +15,21 @@ const Header = ({ siteTitle }) => (
             textDecoration: "none",
           }}
         >
-          <Image />
+          <Box
+            sx={{
+              maxWidth: ['85%', 450],
+              mx: 'auto',
+              mt: [2, 0],
+              transition: ['none', 'all 0.5s'],
+              '&:hover': {transform: [ 'none', 'scale(1.1, 1.1)']}
+            }}
+          >
+            <StaticImage
+              src="../images/tde_logo_long_dark.png"
+              alt="the dev experience - learn to code"
+            />
+          </Box>
+          
         </Link>
       </div>
     </div>
