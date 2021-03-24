@@ -131,7 +131,7 @@ const HomePage = () => {
                   />
                 </Box>
               </Box>
-              <Text>
+              <Text mb={[5, 0]}>
                 HTML, CSS, and JavaScript are the core languages of the web.
                 HTML is what is on the screen (text, images, videos). CSS is how
                 it looks (colors, background colors, font sizes, spacing).
@@ -149,7 +149,7 @@ const HomePage = () => {
                   />
                 </Box>
               </Box>
-              <Text>
+              <Text mb={[5, 0]}>
                 All developers use computers and a common set of tools for their
                 work. This includes a code editor, the terminal, Git (version
                 control), Github (website to save/view code). I cover some
@@ -160,11 +160,11 @@ const HomePage = () => {
                 <Text variant="h2" className="text-center">
                   React
                 </Text>
-                <Box sx={{ maxWidth: 200, mt: 2, mx: "auto" }}>
+                <Box sx={{ maxWidth: 130, mt: 5, mx: "auto", mb: [0, 5] }}>
                   <StaticImage src="../images/react.png" alt="react logo" />
                 </Box>
               </Box>
-              <Text>
+              <Text mb={[5, 0]}>
                 React is one of the main JavaScript frontend frameworks
                 (Angular, React, and Vue). It leverages "components" and "state"
                 to build more complex webpages. There's lots of demand for React
@@ -174,11 +174,11 @@ const HomePage = () => {
                 <Text variant="h2" className="text-center">
                   Node JS
                 </Text>
-                <Box sx={{ maxWidth: 250, mt: 5, mx: "auto", mb: 5 }}>
+                <Box sx={{ maxWidth: 200, mt: [3, 5], mx: "auto", mb: [0, 5] }}>
                   <StaticImage src="../images/node-js.png" alt="node js logo" />
                 </Box>
               </Box>
-              <Text>
+              <Text mb={[5, 0]}>
                 Node JS allows you to use JavaScript for your backend. The
                 frontend is responsible for displaying items on the page. The
                 backend is responsible for saving data to a database and
@@ -188,14 +188,14 @@ const HomePage = () => {
                 <Text variant="h2" className="text-center">
                   Ruby on Rails
                 </Text>
-                <Box sx={{ maxWidth: 200, mx: "auto", mt: 5, mb: 5 }}>
+                <Box sx={{ maxWidth: 200, mx: "auto", mt: 5, mb: [0, 5] }}>
                   <StaticImage
                     src="../images/rails.png"
                     alt="ruby on rails logo"
                   />
                 </Box>
               </Box>
-              <Text>
+              <Text mb={[5, 0]}>
                 Ruby on Rails is a backend framework built in Ruby. Rails is my
                 preferred backend. It speeds up development and organizes your
                 code so it's easy to maintain.
@@ -208,7 +208,7 @@ const HomePage = () => {
                   <StaticImage src="../images/deploy.png" alt="learn to code" />
                 </Box>
               </Box>
-              <Text>
+              <Text mb={[5, 0]}>
                 Once you have an app built, you need somewhere to host/serve it.
                 I recommend Heroku and Netlify. You can integrate them with
                 Git/Github so code changes trigger deployments that update your
@@ -225,7 +225,7 @@ const HomePage = () => {
                   />
                 </Box>
               </Box>
-              <Text>
+              <Text mb={[5, 0]}>
                 When you start building apps for the web, you find out there are
                 bots, scripts, and people constantly attacking or spamming your
                 site. I teach you the basics of security for web applications.
@@ -234,14 +234,14 @@ const HomePage = () => {
                 <Text variant="h2" className="text-center">
                   Performance
                 </Text>
-                <Box sx={{ maxWidth: 200, mx: "auto", mt: 5, mb: 5 }}>
+                <Box sx={{ maxWidth: 200, mx: "auto", mt: 5, mb: [3, 5] }}>
                   <StaticImage
                     src="../images/lighthouse.png"
                     alt="learn to code"
                   />
                 </Box>
               </Box>
-              <Text>
+              <Text mb={[5, 0]}>
                 Nobody likes a slow site. I cover how to check how fast your app
                 is loading, the tools used to identify bottlenecks, and
                 expected/average response times.
