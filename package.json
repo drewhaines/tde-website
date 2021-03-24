@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-mdx-basic",
-  "description": "Gatsby starter MDX basic",
+  "name": "the-dev-experience",
+  "description": "The Dev Experience Website",
   "version": "1.0.0",
-  "author": "Chris Biscardi <chris@christopherbiscardi.com>",
+  "author": "Drew Haines <drewhaines3@gmail.com@>",
   "dependencies": {
     "@mdx-js/mdx": "^1.1.5",
     "@mdx-js/react": "^1.1.5",

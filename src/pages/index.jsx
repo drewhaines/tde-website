@@ -118,16 +118,16 @@ const HomePage = () => {
             <Grid
               variant="centered"
               columns={["1fr", null, null, "auto 1fr"]}
-              sx={{ gap: "50px", mt: 10 }}
+              sx={{ gap: ["20px", "50px"], mt: 10 }}
             >
               <Box>
                 <Text variant="h2" className="text-center">
                   HTML, CSS, and JS
                 </Text>
-                <Box sx={{ maxWidth: 200, mx: "auto" }}>
+                <Box sx={{ maxWidth: 250, mt: 8, mx: "auto" }}>
                   <StaticImage
-                    src="../images/programming.png"
-                    alt="learn to code"
+                    src="../images/html-css-js.png"
+                    alt="html css and js logo"
                   />
                 </Box>
               </Box>
@@ -142,10 +142,10 @@ const HomePage = () => {
                 <Text variant="h2" className="text-center">
                   Computers & Dev Tools
                 </Text>
-                <Box sx={{ maxWidth: 200, mx: "auto" }}>
+                <Box sx={{ maxWidth: 250, mt: 8, mx: "auto" }}>
                   <StaticImage
-                    src="../images/programming.png"
-                    alt="learn to code"
+                    src="../images/dev-tools.png"
+                    alt="developer tools"
                   />
                 </Box>
               </Box>
@@ -160,11 +160,8 @@ const HomePage = () => {
                 <Text variant="h2" className="text-center">
                   React
                 </Text>
-                <Box sx={{ maxWidth: 200, mx: "auto" }}>
-                  <StaticImage
-                    src="../images/programming.png"
-                    alt="learn to code"
-                  />
+                <Box sx={{ maxWidth: 200, mt: 2, mx: "auto" }}>
+                  <StaticImage src="../images/react.png" alt="react logo" />
                 </Box>
               </Box>
               <Text>
@@ -177,11 +174,8 @@ const HomePage = () => {
                 <Text variant="h2" className="text-center">
                   Node JS
                 </Text>
-                <Box sx={{ maxWidth: 200, mx: "auto" }}>
-                  <StaticImage
-                    src="../images/programming.png"
-                    alt="learn to code"
-                  />
+                <Box sx={{ maxWidth: 250, mt: 5, mx: "auto", mb: 5 }}>
+                  <StaticImage src="../images/node-js.png" alt="node js logo" />
                 </Box>
               </Box>
               <Text>
@@ -194,10 +188,10 @@ const HomePage = () => {
                 <Text variant="h2" className="text-center">
                   Ruby on Rails
                 </Text>
-                <Box sx={{ maxWidth: 200, mx: "auto" }}>
+                <Box sx={{ maxWidth: 200, mx: "auto", mt: 5, mb: 5 }}>
                   <StaticImage
-                    src="../images/programming.png"
-                    alt="learn to code"
+                    src="../images/rails.png"
+                    alt="ruby on rails logo"
                   />
                 </Box>
               </Box>
@@ -210,11 +204,8 @@ const HomePage = () => {
                 <Text variant="h2" className="text-center">
                   Deployment
                 </Text>
-                <Box sx={{ maxWidth: 200, mx: "auto" }}>
-                  <StaticImage
-                    src="../images/programming.png"
-                    alt="learn to code"
-                  />
+                <Box sx={{ maxWidth: 200, mx: "auto", mt: 7, mb: 5 }}>
+                  <StaticImage src="../images/deploy.png" alt="learn to code" />
                 </Box>
               </Box>
               <Text>
@@ -227,9 +218,9 @@ const HomePage = () => {
                 <Text variant="h2" className="text-center">
                   Security
                 </Text>
-                <Box sx={{ maxWidth: 200, mx: "auto" }}>
+                <Box sx={{ maxWidth: 100, mx: "auto", mt: 5 }}>
                   <StaticImage
-                    src="../images/programming.png"
+                    src="../images/security.png"
                     alt="learn to code"
                   />
                 </Box>
@@ -237,16 +228,15 @@ const HomePage = () => {
               <Text>
                 When you start building apps for the web, you find out there are
                 bots, scripts, and people constantly attacking or spamming your
-                site. I teach you about some of the basic of security for web
-                applications.
+                site. I teach you the basics of security for web applications.
               </Text>
               <Box>
                 <Text variant="h2" className="text-center">
                   Performance
                 </Text>
-                <Box sx={{ maxWidth: 200, mx: "auto" }}>
+                <Box sx={{ maxWidth: 200, mx: "auto", mt: 5, mb: 5 }}>
                   <StaticImage
-                    src="../images/programming.png"
+                    src="../images/lighthouse.png"
                     alt="learn to code"
                   />
                 </Box>
@@ -260,11 +250,8 @@ const HomePage = () => {
                 <Text variant="h2" className="text-center">
                   Getting Paid
                 </Text>
-                <Box sx={{ maxWidth: 200, mx: "auto" }}>
-                  <StaticImage
-                    src="../images/programming.png"
-                    alt="learn to code"
-                  />
+                <Box sx={{ maxWidth: 165, mx: "auto", mt: 7 }}>
+                  <StaticImage src="../images/money.png" alt="learn to code" />
                 </Box>
               </Box>
               <Text>
