@@ -34,7 +34,9 @@ const HomePage = () => {
             </Heading>
             <Box my={[3, 0]}>
               <Link to="/courses">
-                <button class="btn_main_cta btn_success">Get Started</button>
+                <button class="btn_main_cta">
+                  Let's Code <span className="margin_left_10">🚀</span>
+                </button>
               </Link>
             </Box>
           </Grid>
@@ -48,7 +50,14 @@ const HomePage = () => {
               </Box>
               <Text variant="h2">Monetize your skills</Text>
             </Box>
-            <Box sx={{ ml: [1, 5], maxWidth: ["100%", 600] }}>
+            <Box
+              sx={{
+                ml: [1, 5],
+                mt: [5, 8],
+                px: [3, 0],
+                maxWidth: ["100%", 450]
+              }}
+            >
               <StaticImage
                 src="../images/programming.png"
                 alt="learn to code"
@@ -102,7 +111,7 @@ const HomePage = () => {
                 <Text variant="h2" mb={1}>
                   Business opportunities
                 </Text>
-                <Text mb={7}>
+                <Text mb={0}>
                   {
                     "All entrepreneurs should have some knowledge of code. \n\nKnowing how to code is a huge advantage that gives you the ability to build websites, apps, and ideas for your businesses."
                   }
@@ -114,7 +123,9 @@ const HomePage = () => {
             </Grid>
           </Grid>
           <Grid variant="centered" mt={0} pb={20} px={5}>
-            <Text variant="h1">What do I teach and why?</Text>
+            <Text variant="h1" sx={{ fontSize: ["30px", "32px"] }}>
+              What do I teach and why?
+            </Text>
             <Grid
               variant="centered"
               columns={["1fr", null, null, "auto 1fr"]}

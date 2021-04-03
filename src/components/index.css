@@ -627,6 +627,10 @@ pre tt:after {
   content: "";
 }
 
+.margin_left_10 {
+  margin-left: 10px;
+}
+
 .padding {
   padding: 25px;
   max-width: 960px;
@@ -649,9 +653,10 @@ pre tt:after {
   max-width: 350px;
   margin: auto;
   color: white;
+  background-color: var(--dark);
   border: none;
   width: 100%;
-  border-radius: 6px;
+  border-radius: 10px;
   font-weight: bold;
   font-size: 26px;
   cursor: pointer;
@@ -914,10 +919,6 @@ pre tt:after {
     left: 0;
     z-index: 3;
     width: 100%;
-  }
-
-  .btn_main_cta {
-    border-radius: 0;
   }
 
   .btn_main_cta:hover {
