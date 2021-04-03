@@ -10,7 +10,7 @@ import {
   Text,
   Flex,
   Heading,
-  Image
+  Link as ThemeLink
 } from "theme-ui";
 
 const HomePage = () => {
@@ -81,7 +81,7 @@ const HomePage = () => {
                 </Text>
                 <Text mb={7}>
                   {
-                    "Juniors to Mid-level make ~$65-90k. \nSeniors and Leads are closer to $100-150k. \nIt can be much more at high profile companies."
+                    "Juniors to Mid-level make ~$65-90k in USA, CA. \nSeniors and Leads are closer to $100-150k in USA, CA. \nIt can be much more at high profile companies."
                   }
                 </Text>
                 <Text variant="h2" mb={1}>
@@ -127,9 +127,8 @@ const HomePage = () => {
               What do I teach and why?
             </Text>
             <Grid
-              variant="centered"
               columns={["1fr", null, null, "auto 1fr"]}
-              sx={{ gap: ["20px", "50px"], mt: 10 }}
+              sx={{ gap: ["20px", "50px"], mt: 10, justifyItems: "center" }}
             >
               <Box>
                 <Text variant="h2" className="text-center">
@@ -142,13 +141,44 @@ const HomePage = () => {
                   />
                 </Box>
               </Box>
-              <Text mb={[5, 0]}>
-                HTML, CSS, and JavaScript are the core languages of the web.
-                HTML is what is on the screen (text, images, videos). CSS is how
-                it looks (colors, background colors, font sizes, spacing).
-                JavaScript is the programming language that allows you to make
-                the page interactive (hide/show items on click).
-              </Text>
+              <Box mb={[5, 0]} mr="auto">
+                <Text mb={2}>
+                  HTML, CSS, and JavaScript are the core languages of the web.
+                </Text>
+                <Text mb={2}>
+                  <ThemeLink
+                    href="https://www.w3schools.com/html/"
+                    target="blank"
+                  >
+                    HTML
+                  </ThemeLink>
+                  {
+                    " is used to tell the browser WHAT is on the page (text, images, videos)."
+                  }
+                </Text>
+                <Text mb={2}>
+                  <ThemeLink
+                    href="https://www.w3schools.com/css/"
+                    target="blank"
+                  >
+                    CSS
+                  </ThemeLink>
+                  {
+                    " is used to STYLE the page (colors, background colors, font sizes, spacing)."
+                  }
+                </Text>
+                <Text mb={2}>
+                  <ThemeLink
+                    href="https://www.w3schools.com/js/DEFAULT.asp"
+                    target="blank"
+                  >
+                    JavaScript
+                  </ThemeLink>
+                  {
+                    " is used to MANIPULATE the page to make it interactive (hide/show items on click)."
+                  }
+                </Text>
+              </Box>
               <Box>
                 <Text variant="h2" className="text-center">
                   Computers & Dev Tools
@@ -160,13 +190,91 @@ const HomePage = () => {
                   />
                 </Box>
               </Box>
-              <Text mb={[5, 0]}>
-                All developers use computers and a common set of tools for their
-                work. This includes a code editor, the terminal, Git (version
-                control), Github (website to save/view code). I cover some
-                important concepts in computing, the most common commands, and
-                my recommended setup.
-              </Text>
+              <Box mb={[5, 0]} mr="auto">
+                <Text mb={2}>
+                  All developers use computers and a common set of tools for
+                  their work. This includes:
+                </Text>
+                <Text mb={2}>
+                  <Text>
+                    - your computer and operating system (Mac, Windows, Linux).
+                  </Text>
+                  <Text>
+                    {"- a code editor like "}
+                    <ThemeLink
+                      href="https://code.visualstudio.com/"
+                      target="blank"
+                    >
+                      VS Code
+                    </ThemeLink>
+                    .
+                  </Text>
+                  <Text>
+                    {"- using the terminal to run commands and programs "}(
+                    <ThemeLink
+                      href="https://github.com/0nn0/terminal-mac-cheatsheet"
+                      target="blank"
+                    >
+                      basic mac commands
+                    </ThemeLink>
+                    /
+                    <ThemeLink
+                      href="https://code.visualstudio.com/"
+                      target="blank"
+                    >
+                      basic windows commands
+                    </ThemeLink>
+                    ).
+                  </Text>
+                  <Text>
+                    {"- "}
+                    <ThemeLink href="https://git-scm.com/" target="blank">
+                      Git
+                    </ThemeLink>
+                    {
+                      " for version control. Git allows you to save your code in a way that lets you go back and view the code at any point in time during a project."
+                    }
+                  </Text>
+                  <Text>
+                    {"- "}
+                    <ThemeLink href="https://github.com/" target="blank">
+                      Github
+                    </ThemeLink>
+                    {" to share code and collaborate with other developers."}
+                  </Text>
+                  <Text>
+                    {"- Google and "}
+                    <ThemeLink href="https://github.com/" target="blank">
+                      StackOverflow
+                    </ThemeLink>
+                    {" to find solutions to common coding problems."}
+                  </Text>
+                  <Text mb={2}>
+                    - some understanding of{" "}
+                    <ThemeLink
+                      href="https://en.wikipedia.org/wiki/Web_browser"
+                      target="blank"
+                    >
+                      browsers
+                    </ThemeLink>
+                    ,{" "}
+                    <ThemeLink
+                      href="https://en.wikipedia.org/wiki/Server_(computing)"
+                      target="blank"
+                    >
+                      servers
+                    </ThemeLink>
+                    , and the{" "}
+                    <ThemeLink
+                      href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview"
+                      target="blank"
+                    >
+                      HTTP protocol
+                    </ThemeLink>
+                    .
+                  </Text>
+                </Text>
+              </Box>
               <Box>
                 <Text variant="h2" className="text-center">
                   React
@@ -175,12 +283,35 @@ const HomePage = () => {
                   <StaticImage src="../images/react.png" alt="react logo" />
                 </Box>
               </Box>
-              <Text mb={[5, 0]}>
-                React is one of the main JavaScript frontend frameworks
-                (Angular, React, and Vue). It leverages "components" and "state"
-                to build more complex webpages. There's lots of demand for React
-                related work in the job market right now.
-              </Text>
+              <Box mb={[5, 0]} mr="auto">
+                <Text mb={2}>
+                  <ThemeLink href="https://reactjs.org/" target="blank">
+                    React
+                  </ThemeLink>
+                  {
+                    " is one of the main JavaScript frontend libraries/frameworks (Angular, React, and Vue)."
+                  }
+                </Text>
+                <Text mb={2}>
+                  A{" "}
+                  <Text sx={{ display: "inline", fontWeight: "bold" }}>
+                    {"library"}
+                  </Text>{" "}
+                  is a reusable set of code written by another developer so we
+                  don't have to reinvent the wheel everytime we start a new
+                  project. A{" "}
+                  <Text sx={{ display: "inline", fontWeight: "bold" }}>
+                    {"framework"}
+                  </Text>{" "}
+                  is set of patterns, files/folders, and rules that help
+                  standardize applications so we can build faster.
+                </Text>
+                <Text mb={2}>
+                  React leverages "components" and "state" to build complex,
+                  interactive webpages. There's lots of demand for React related
+                  work in the job market right now.
+                </Text>
+              </Box>
               <Box>
                 <Text variant="h2" className="text-center">
                   Node JS
@@ -189,12 +320,34 @@ const HomePage = () => {
                   <StaticImage src="../images/node-js.png" alt="node js logo" />
                 </Box>
               </Box>
-              <Text mb={[5, 0]}>
-                Node JS allows you to use JavaScript for your backend. The
-                frontend is responsible for displaying items on the page. The
-                backend is responsible for saving data to a database and
-                interacting with APIs.
-              </Text>
+              <Box mb={[5, 0]} mr="auto">
+                <Text mb={2}>
+                  <ThemeLink href="https://nodejs.org/en/" target="blank">
+                    Node JS
+                  </ThemeLink>
+                  {
+                    ' is a "JavaScript runtime" that allows you to use JavaScript for your backend.'
+                  }
+                </Text>
+                <Text mb={2}>
+                  Software development is commonly split into 2 groups, frontend
+                  and backend. The{" "}
+                  <Text sx={{ display: "inline", fontWeight: "bold" }}>
+                    {"frontend"}
+                  </Text>{" "}
+                  is code that runs on the browser and is responsible for things
+                  like displaying items on the page. The{" "}
+                  <Text sx={{ display: "inline", fontWeight: "bold" }}>
+                    {"backend"}
+                  </Text>{" "}
+                  is code that runs on the server and is responsible for things
+                  like saving data to a database or interacting with APIs.
+                </Text>
+                <Text mb={2}>
+                  Node JS comes with a package manager called npm. This helps
+                  you easily install and use JS libraries.
+                </Text>
+              </Box>
               <Box>
                 <Text variant="h2" className="text-center">
                   Ruby on Rails
@@ -206,11 +359,26 @@ const HomePage = () => {
                   />
                 </Box>
               </Box>
-              <Text mb={[5, 0]}>
-                Ruby on Rails is a backend framework built in Ruby. Rails is my
-                preferred backend. It speeds up development and organizes your
-                code so it's easy to maintain.
-              </Text>
+              <Box mb={[5, 0]} mr="auto">
+                <Text mb={2}>
+                  <ThemeLink href="https://rubyonrails.org/" target="blank">
+                    Ruby on Rails
+                  </ThemeLink>
+                  {" is a backend framework built in "}
+                  <ThemeLink
+                    href="https://www.ruby-lang.org/en/"
+                    target="blank"
+                  >
+                    Ruby
+                  </ThemeLink>
+                  .
+                </Text>
+                <Text mb={2}>Rails is my preferred backend.</Text>
+                <Text mb={2}>
+                  It speeds up development and organizes your code so it's easy
+                  to maintain.
+                </Text>
+              </Box>
               <Box>
                 <Text variant="h2" className="text-center">
                   Deployment
@@ -219,21 +387,45 @@ const HomePage = () => {
                   <StaticImage src="../images/deploy.png" alt="learn to code" />
                 </Box>
               </Box>
-              <Text mb={[5, 0]}>
-                Once you have an app built, you need somewhere to host/serve it.
-                I recommend Heroku and Netlify. You can integrate them with
-                Git/Github so code changes trigger deployments that update your
-                live site.
-              </Text>
+              <Box mb={[5, 0]} mr="auto">
+                <Text mb={2}>
+                  Once you have an app built, you need somewhere to host/serve
+                  it on the internet.
+                </Text>
+                <Text mb={2}>
+                  The service you use for deployment depends on the type of app
+                  you're deploying.
+                </Text>
+                <Text mb={2}>
+                  I recommend{" "}
+                  <ThemeLink href="https://www.heroku.com/" target="blank">
+                    Heroku
+                  </ThemeLink>
+                  ,{" "}
+                  <ThemeLink href="https://www.netlify.com/" target="blank">
+                    Netlify
+                  </ThemeLink>
+                  ,{" and "}
+                  <ThemeLink href="https://vercel.com/" target="blank">
+                    Vercel
+                  </ThemeLink>{" "}
+                  depending on what your building.
+                </Text>
+                <Text mb={2}>
+                  All these services integrate with Git/Github so code changes
+                  trigger deployments that update your live site.
+                </Text>
+              </Box>
+              {/* <Text mb={[5, 0]}>
+                
+                I recommend Heroku and Netlify. 
+              </Text> */}
               <Box>
                 <Text variant="h2" className="text-center">
                   Security
                 </Text>
                 <Box sx={{ maxWidth: 100, mx: "auto", mt: 5 }}>
-                  <StaticImage
-                    src="../images/security.png"
-                    alt="learn to code"
-                  />
+                  <StaticImage src="../images/lock.png" alt="learn to code" />
                 </Box>
               </Box>
               <Text mb={[5, 0]}>
