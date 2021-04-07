@@ -153,7 +153,7 @@ const HomePage = () => {
                     HTML
                   </ThemeLink>
                   {
-                    " is used to tell the browser WHAT is on the page (text, images, videos)."
+                    " is used to tell the browser what is on the page (text, images, videos)."
                   }
                 </Text>
                 <Text mb={2}>
@@ -164,7 +164,7 @@ const HomePage = () => {
                     CSS
                   </ThemeLink>
                   {
-                    " is used to STYLE the page (colors, background colors, font sizes, spacing)."
+                    " is used to style the page (colors, background colors, font sizes, spacing)."
                   }
                 </Text>
                 <Text mb={2}>
@@ -175,7 +175,7 @@ const HomePage = () => {
                     JavaScript
                   </ThemeLink>
                   {
-                    " is used to MANIPULATE the page to make it interactive (hide/show items on click)."
+                    " is used to manipulate the page to make it interactive (hide/show items on click)."
                   }
                 </Text>
               </Box>
@@ -193,8 +193,9 @@ const HomePage = () => {
               <Box mb={[5, 0]} mr="auto">
                 <Text mb={2}>
                   All developers use computers and a common set of tools for
-                  their work. This includes:
+                  their work.
                 </Text>
+                <Text mb={1}>This includes:</Text>
                 <Text mb={2}>
                   <Text>
                     - your computer and operating system (Mac, Windows, Linux).
@@ -484,20 +485,20 @@ const HomePage = () => {
                 </Text>
                 <Text mb={2}>
                   Services like{" "}
+                  <ThemeLink href="https://aws.amazon.com/ec2" target="blank">
+                    AWS
+                  </ThemeLink>{" "}
+                  or{" "}
                   <ThemeLink
                     href="https://www.digitalocean.com/"
                     target="blank"
                   >
                     Digital Ocean
                   </ThemeLink>{" "}
-                  or{" "}
-                  <ThemeLink href="https://aws.amazon.com/ec2" target="blank">
-                    AWS
-                  </ThemeLink>{" "}
                   can also be used and give you more control over the server.
                   However, I highly recommend going with one of the above
-                  services because they reduce a lot of unnecessary work around
-                  devops.
+                  services because they reduce a lot of unnecessary work and
+                  will save you a ton of time.
                 </Text>
               </Box>
               <Box>
@@ -539,9 +540,6 @@ const HomePage = () => {
                   sensitive data/
                 </Text>
               </Box>
-              {/* <Text mb={[5, 0]}>
-                 I teach you the basics of security for web applications.
-              </Text> */}
               <Box>
                 <Text variant="h2" className="text-center">
                   Performance
@@ -625,11 +623,51 @@ const HomePage = () => {
               <Box sx={{ position: "relative", maxWidth: [400] }}>
                 <StaticImage src="../images/drew.jpg" alt="drew" />
               </Box>
-              <Text>
-                {
-                  "There's a bunch of people teaching code, so why me?\n\nI offer simple but detailed explainations. I give you the practical stuff you need to know in an easy to digest format. This is the stuff I wish someone told me when I was learning to code.\n\nYou don't learn code by just watching videos, so you're expected to build projects and follow along.\n\nIf you do your best as a student, I promise to do my best as your teacher."
-                }
-              </Text>
+              <Box mb={[5, 0]} mr="auto">
+                <Text mb={2}>
+                  I love teaching and have over 10 years worth of web
+                  development experience.
+                </Text>
+                {/* <Text mb={2}>
+                  I went to SDSU for ⚡ Electrical Engineering ⚡ and ran a
+                  tutoring business that taught circuits, electromagnetics, and
+                  code (C, Assembly, Python).
+                </Text>
+                <Text mb={2}>
+                  Even though I technically went to school, I consider myself to
+                  be mostly self taught. HTML/CSS/JS, Git, Github, Ruby on Rails
+                  and Node JS were not taught in my courses. The vast majority
+                  of what I learned was online. I understand what it's like to
+                  be stuck on a dumb error
+                </Text>
+                <Text mb={2}>
+                  I also have experiece with web development bootcamps. I've
+                  help with the internship program at{" "}
+                  <ThemeLink
+                    href="https://www.learnacademy.org/"
+                    target="blank"
+                  >
+                    LEARN Academy
+                  </ThemeLink>{" "}
+                  in San Diego. I've worked with students one on one and know
+                  what's taught in these environments. Bootcamps are great for
+                  getting your questions answered and working with a teacher/TA,
+                  however the pace can feel a little rushed depending on your
+                  skill level and how much time you have.
+                </Text> */}
+                <Text mb={2}>
+                  I offer simple but detailed explainations. I give you the
+                  practical stuff you need to know in an easy to digest format
+                  and the resources to learn more. This is the path I wish
+                  someone taught me when I was learning to code.
+                </Text>
+                <Text mb={2}>
+                  Explaining how to come up with solutions is really important
+                  to me. There are lots of people that have tutorials on how to
+                  build something, but few of them show how they came to their
+                  solution.
+                </Text>
+              </Box>
             </Grid>
           </Grid>
         </Container>
