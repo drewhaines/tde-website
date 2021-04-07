@@ -307,9 +307,25 @@ const HomePage = () => {
                   standardize applications so we can build faster.
                 </Text>
                 <Text mb={2}>
-                  React leverages "components" and "state" to build complex,
-                  interactive webpages. There's lots of demand for React related
-                  work in the job market right now.
+                  React is a library that uses "components", "state", and
+                  "props" to build complex, interactive webpages. There's lots
+                  of demand for React related work in the job market right now.
+                </Text>
+                <Text mb={2}>
+                  Frameworks like{" "}
+                  <ThemeLink href="https://nextjs.org/" target="blank">
+                    Next.js
+                  </ThemeLink>{" "}
+                  or{" "}
+                  <ThemeLink
+                    href="https://www.gatsbyjs.com/docs/"
+                    target="blank"
+                  >
+                    Gatsby
+                  </ThemeLink>{" "}
+                  are used with React to create really fast and efficient
+                  websites/apps. They handle things like URL routing, optimizing
+                  images, and optimizing production builds.
                 </Text>
               </Box>
               <Box>
@@ -325,27 +341,49 @@ const HomePage = () => {
                   <ThemeLink href="https://nodejs.org/en/" target="blank">
                     Node JS
                   </ThemeLink>
+                  {' is a "JavaScript runtime" built on '}
+                  <ThemeLink href="https://v8.dev/" target="blank">
+                    Chrome's V8 JavaScript engine
+                  </ThemeLink>
                   {
-                    ' is a "JavaScript runtime" that allows you to use JavaScript for your backend.'
+                    " . It has a varity of uses in web development and is necessary to build modern JS apps. "
                   }
                 </Text>
                 <Text mb={2}>
-                  Software development is commonly split into 2 groups, frontend
-                  and backend. The{" "}
-                  <Text sx={{ display: "inline", fontWeight: "bold" }}>
-                    {"frontend"}
-                  </Text>{" "}
-                  is code that runs on the browser and is responsible for things
-                  like displaying items on the page. The{" "}
-                  <Text sx={{ display: "inline", fontWeight: "bold" }}>
-                    {"backend"}
-                  </Text>{" "}
-                  is code that runs on the server and is responsible for things
-                  like saving data to a database or interacting with APIs.
+                  Node JS comes with a package manager called{" "}
+                  <ThemeLink href="https://www.npmjs.com/about" target="blank">
+                    npm
+                  </ThemeLink>
+                  . This helps you easily install and use JS libraries. All
+                  projects that utilize npm packages have a config file called{" "}
+                  <ThemeLink
+                    href="https://nodejs.org/en/knowledge/getting-started/npm/what-is-the-file-package-json/"
+                    target="blank"
+                  >
+                    package.json
+                  </ThemeLink>
+                  {
+                    " that allow you to specify what libraries you need and which version."
+                  }
                 </Text>
                 <Text mb={2}>
-                  Node JS comes with a package manager called npm. This helps
-                  you easily install and use JS libraries.
+                  Node.js can also be used as a server for your backend.{" "}
+                  <ThemeLink
+                    href="https://stackoverflow.com/questions/7440379/what-exactly-is-the-meaning-of-an-api"
+                    target="blank"
+                  >
+                    Express.js
+                  </ThemeLink>{" "}
+                  is the most common framework for Node.js backends and lets you
+                  do things like save data to a database or integrate with other
+                  people's{" "}
+                  <ThemeLink
+                    href="https://stackoverflow.com/questions/7440379/what-exactly-is-the-meaning-of-an-api"
+                    target="blank"
+                  >
+                    APIs (application programming interfaces)
+                  </ThemeLink>
+                  .
                 </Text>
               </Box>
               <Box>
@@ -373,11 +411,42 @@ const HomePage = () => {
                   </ThemeLink>
                   .
                 </Text>
-                <Text mb={2}>Rails is my preferred backend.</Text>
                 <Text mb={2}>
                   It speeds up development and organizes your code so it's easy
                   to maintain.
                 </Text>
+                <Text mb={2}>
+                  Rails is built around a pattern called MVC (model, view,
+                  controller).{" "}
+                  <Text sx={{ display: "inline", fontWeight: "bold" }}>
+                    {"Models"}
+                  </Text>{" "}
+                  are files that represent objects and define the
+                  attributes/logic for those objects.{" "}
+                  <Text sx={{ display: "inline", fontWeight: "bold" }}>
+                    {"Views"}
+                  </Text>{" "}
+                  are how the objects are displayed to the user (usually HTML or
+                  JSON).{" "}
+                  <Text sx={{ display: "inline", fontWeight: "bold" }}>
+                    {"Controllers"}
+                  </Text>{" "}
+                  are responsible for routing (redirects, 404s) and interating
+                  with models (saving/updating objects).
+                </Text>
+                <Text mb={2}>
+                  Rails teaches a lot of great best practices, is popular for
+                  web development, and is a great skill in your developer
+                  toolbelt.{" Read more on "}
+                  <ThemeLink
+                    href="https://en.wikipedia.org/wiki/Ruby_on_Rails"
+                    target="blank"
+                  >
+                    Wikipedia
+                  </ThemeLink>
+                  .
+                </Text>
+                <Text mb={2}></Text>
               </Box>
               <Box>
                 <Text variant="h2" className="text-center">
@@ -400,26 +469,37 @@ const HomePage = () => {
                   I recommend{" "}
                   <ThemeLink href="https://www.heroku.com/" target="blank">
                     Heroku
-                  </ThemeLink>
-                  ,{" "}
+                  </ThemeLink>{" "}
+                  for Rails and Node.js apps ,{" "}
                   <ThemeLink href="https://www.netlify.com/" target="blank">
                     Netlify
-                  </ThemeLink>
-                  ,{" and "}
+                  </ThemeLink>{" "}
+                  for React apps built with Gatsby ,{" and "}
                   <ThemeLink href="https://vercel.com/" target="blank">
                     Vercel
                   </ThemeLink>{" "}
-                  depending on what your building.
+                  for React apps built with Next.js. All these services
+                  integrate with Git/Github so code changes trigger deployments
+                  that update your live site.
                 </Text>
                 <Text mb={2}>
-                  All these services integrate with Git/Github so code changes
-                  trigger deployments that update your live site.
+                  Services like{" "}
+                  <ThemeLink
+                    href="https://www.digitalocean.com/"
+                    target="blank"
+                  >
+                    Digital Ocean
+                  </ThemeLink>{" "}
+                  or{" "}
+                  <ThemeLink href="https://aws.amazon.com/ec2" target="blank">
+                    AWS
+                  </ThemeLink>{" "}
+                  can also be used and give you more control over the server.
+                  However, I highly recommend going with one of the above
+                  services because they reduce a lot of unnecessary work around
+                  devops.
                 </Text>
               </Box>
-              {/* <Text mb={[5, 0]}>
-                
-                I recommend Heroku and Netlify. 
-              </Text> */}
               <Box>
                 <Text variant="h2" className="text-center">
                   Security
@@ -428,11 +508,40 @@ const HomePage = () => {
                   <StaticImage src="../images/lock.png" alt="learn to code" />
                 </Box>
               </Box>
-              <Text mb={[5, 0]}>
-                When you start building apps for the web, you find out there are
-                bots, scripts, and people constantly attacking or spamming your
-                site. I teach you the basics of security for web applications.
-              </Text>
+              <Box mb={[5, 0]} mr="auto">
+                <Text mb={2}>
+                  When you start building apps for the web, you learn there are
+                  bots, scripts, and people constantly attacking or spamming
+                  your site.
+                </Text>
+
+                <Text mb={2}>
+                  We'll look at some basics of{" "}
+                  <ThemeLink
+                    href="https://www.cloudflare.com/learning/security/what-is-web-application-security/"
+                    target="blank"
+                  >
+                    web application security
+                  </ThemeLink>{" "}
+                  and{" what the heck is "}
+                  <ThemeLink
+                    href="https://owasp.org/www-project-top-ten/"
+                    target="blank"
+                  >
+                    OWASP
+                  </ThemeLink>{" "}
+                  {" (Open Web Application Security Project)"}.
+                </Text>
+                <Text mb={2}>
+                  The frameworks we work in (Next.js, Rails) have some security
+                  built in and try to filter out dangerous requests. However,
+                  you always needs to keep security in mind when handling
+                  sensitive data/
+                </Text>
+              </Box>
+              {/* <Text mb={[5, 0]}>
+                 I teach you the basics of security for web applications.
+              </Text> */}
               <Box>
                 <Text variant="h2" className="text-center">
                   Performance
@@ -444,11 +553,37 @@ const HomePage = () => {
                   />
                 </Box>
               </Box>
-              <Text mb={[5, 0]}>
-                Nobody likes a slow site. I cover how to check how fast your app
-                is loading, the tools used to identify bottlenecks, and
-                expected/average response times.
-              </Text>
+              <Box mb={[5, 0]} mr="auto">
+                <Text mb={2}>Nobody likes a slow site.</Text>
+                <Text mb={2}>
+                  Plus Google is starting to rank search results based on their
+                  performance metrics.
+                </Text>
+                <Text mb={2}>
+                  We'll look at how to use{" "}
+                  <ThemeLink
+                    href="https://developers.google.com/web/tools/lighthouse"
+                    target="blank"
+                  >
+                    Lighthouse
+                  </ThemeLink>{" "}
+                  and{" "}
+                  <ThemeLink
+                    href="https://developers.google.com/speed/pagespeed/insights/"
+                    target="blank"
+                  >
+                    PageSpeed Insights
+                  </ThemeLink>{" "}
+                  {
+                    " to check how fast your app is loading and how to identify bottlenecks."
+                  }
+                </Text>
+                <Text mb={2}>
+                  We'll also discuss average response times for different
+                  frameworks, common causes for slowness, and how to scale your
+                  applications.
+                </Text>
+              </Box>
               <Box>
                 <Text variant="h2" className="text-center">
                   Getting Paid
@@ -457,12 +592,27 @@ const HomePage = () => {
                   <StaticImage src="../images/money.png" alt="learn to code" />
                 </Box>
               </Box>
-              <Text>
-                It's important to know how you're going to make money. Do you
-                want to work as an employee for a tech company? Do you want to
-                consult/freelance and have more control over your time? Do you
-                want to build an app and charge money for it?
-              </Text>
+              <Box mb={[5, 0]} mr="auto">
+                <Text mb={2}>
+                  It's important to know how you're going to make money.
+                </Text>
+                <Text mb={2}>
+                  Do you want to work as an employee for a tech company?
+                </Text>
+                <Text mb={2}>
+                  Do you want to consult/freelance to have more control over
+                  your time?
+                </Text>
+                <Text mb={2}>
+                  Do you want to build an app and charge money for it?
+                </Text>
+                <Text mb={2}>
+                  We'll look at the pros/cons of different career paths and the
+                  steps to be successful in each. The process isn't immeditate,
+                  but if you put in the time and develop your skills, you'll be
+                  able to find work.
+                </Text>
+              </Box>
             </Grid>
           </Grid>
           <Grid variant="centered" mt={10} pb={10} px={5}>
