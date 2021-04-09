@@ -123,7 +123,7 @@ const HomePage = () => {
             </Grid>
           </Grid>
           <Grid variant="centered" mt={0} pb={20} px={5}>
-            <Text variant="h1" sx={{ fontSize: ["30px", "32px"] }}>
+            <Text variant="h1" sx={{ fontSize: ["30px", null, null, "40px"] }}>
               What do I teach and why?
             </Text>
             <Grid
@@ -616,7 +616,6 @@ const HomePage = () => {
           <Grid variant="centered" mt={10} pb={10} px={5}>
             <Text variant="h1">Why learn from me?</Text>
             <Grid
-              variant="centered"
               columns={["1fr", null, null, "auto 1fr"]}
               sx={{ gap: ["25px", "50px"], mt: 10 }}
             >
@@ -625,47 +624,65 @@ const HomePage = () => {
               </Box>
               <Box mb={[5, 0]} mr="auto">
                 <Text mb={2}>
+                  Hey, I'm Drew <span className="margin_left_5">👋</span>
+                </Text>
+                <Text mb={2}>
                   I love teaching and have over 10 years worth of web
-                  development experience.
-                </Text>
-                {/* <Text mb={2}>
-                  I went to SDSU for ⚡ Electrical Engineering ⚡ and ran a
-                  tutoring business that taught circuits, electromagnetics, and
-                  code (C, Assembly, Python).
+                  development experience. I've built multiple software
+                  businesses (
+                  <ThemeLink href="http://www.dmdevco.com/" target="blank">
+                    DevCo
+                  </ThemeLink>
+                  {" & "}
+                  <ThemeLink
+                    href="https://www.learnacademy.org/"
+                    target="blank"
+                  >
+                    HoursLogger
+                  </ThemeLink>
+                  ) and worked as an senior developer for Fairway Technologies
+                  before they were acquired by{" "}
+                  <ThemeLink
+                    href="https://www.accenture.com/us-en/services/software-engineering/product-platform-engineering"
+                    target="blank"
+                  >
+                    Accenture
+                  </ThemeLink>
+                  .
                 </Text>
                 <Text mb={2}>
-                  Even though I technically went to school, I consider myself to
-                  be mostly self taught. HTML/CSS/JS, Git, Github, Ruby on Rails
-                  and Node JS were not taught in my courses. The vast majority
-                  of what I learned was online. I understand what it's like to
-                  be stuck on a dumb error
+                  I'm unique because I have college, self-taught, and bootcamp
+                  experience.
                 </Text>
                 <Text mb={2}>
-                  I also have experiece with web development bootcamps. I've
-                  help with the internship program at{" "}
+                  I went to SDSU for ⚡ Electrical Engineering ⚡ but I consider
+                  myself to be mostly self taught. HTML/CSS/JS, Git, Github,
+                  Ruby on Rails and Node JS were not taught in my curriculum.
+                  The vast majority of what I learned was online.
+                </Text>
+                <Text mb={2}>
+                  I also have experiece with web development bootcamps. I help
+                  mentor junior engineers in the internship program at{" "}
                   <ThemeLink
                     href="https://www.learnacademy.org/"
                     target="blank"
                   >
                     LEARN Academy
                   </ThemeLink>{" "}
-                  in San Diego. I've worked with students one on one and know
-                  what's taught in these environments. Bootcamps are great for
-                  getting your questions answered and working with a teacher/TA,
-                  however the pace can feel a little rushed depending on your
-                  skill level and how much time you have.
-                </Text> */}
-                <Text mb={2}>
-                  I offer simple but detailed explainations. I give you the
-                  practical stuff you need to know in an easy to digest format
-                  and the resources to learn more. This is the path I wish
-                  someone taught me when I was learning to code.
+                  in San Diego. Bootcamps are great if you need a more
+                  hands-on/classroom setting, but they can be a pretty big time
+                  and money commitment.
                 </Text>
                 <Text mb={2}>
-                  Explaining how to come up with solutions is really important
-                  to me. There are lots of people that have tutorials on how to
-                  build something, but few of them show how they came to their
-                  solution.
+                  I don't pretend to know everything and I don't just skip to
+                  solutions. One of the hardest things to learn in coding is how
+                  to solve your own problems. You'll see exactly what I Google
+                  and how I debug issues that come up.
+                </Text>
+                <Text mb={2}>
+                  I give you the practical stuff you need to know and the
+                  resources to learn more. This is the path I wish someone
+                  taught me when I was learning to code.
                 </Text>
               </Box>
             </Grid>

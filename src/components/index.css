@@ -627,6 +627,10 @@ pre tt:after {
   content: "";
 }
 
+.margin_left_5 {
+  margin-left: 5px;
+}
+
 .margin_left_10 {
   margin-left: 10px;
 }
