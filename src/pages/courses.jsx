@@ -90,28 +90,96 @@ const courseData = [
   },
   {
     title: "Modern Apps in React",
-    description:
-      "React is the most popular JavaScript framework. Learn the fundamentals of React and how to use it to build applications."
+    description: (
+      <Box>
+        <Text mt={4} mb={2}>
+          React is one of the most popular JavaScript framework/libraries.
+        </Text>
+        <Text mb={2}>
+          This covers the fundamentals of React and how to use components,
+          state, and props to create applications. We'll look at events
+          (onClick, onBlur), hooks (useState, useEffect), and other more
+          advanced topics.
+        </Text>
+        <Text>
+          In addition to React, we be looking at some React frameworks like
+          Create React App, Next.js, and Gatsby.
+        </Text>
+      </Box>
+    )
   },
   {
     title: "Ruby on Rails",
-    description:
-      "Ruby on Rails is a popular framework. Learn the fundamentals of React and how to use it to build applications."
+    description: (
+      <Box>
+        <Text mt={4} mb={2}>
+          Ruby on Rails is a popular backend framework for web applications.
+        </Text>
+        <Text mb={2}>
+          This covers the fundamentals of Ruby and Ruby on Rails. We cover Ruby
+          basics, the MVC pattern (model, view, controller), routing URLs,
+          managing your database with "migrations", generating code using
+          "scaffolds", and testing.
+        </Text>
+        <Text>
+          Ruby projects use "gems" (libraries/packages) to share code and
+          functionality. We look at common gems like Devise, Pry, and RSpec.
+        </Text>
+      </Box>
+    )
   },
   {
     title: "Security for Web Apps",
-    description:
-      "There's a lot to know about React. This course covers more advanced features found in modern apps."
+    description: (
+      <Box>
+        <Text mt={4} mb={2}>
+          Bots and hackers will constantly try to attack your programs.
+        </Text>
+        <Text mb={2}>
+          We'll look at common attacks that you're apps should be ready for and
+          how to use things like honeypots or throttling to prevent issues.
+        </Text>
+        <Text>
+          Different apps are susceptible to different attacks. We'll see how the
+          frameworks we choose are important to protecting our apps.
+        </Text>
+      </Box>
+    )
   },
   {
     title: "Performance and Web Vitals",
-    description:
-      "There's a lot to know about React. This course covers more advanced features found in modern apps."
+    description: (
+      <Box>
+        <Text mt={4} mb={2}>
+          Performance is becoming an increasingly important metric in web
+          development.
+        </Text>
+        <Text mb={2}>
+          We'll look at Lighthouse and PageSpeed Insights to check your "web
+          vitals" (LCP, FID, CLS) and how to optimze those metrics based on
+          their suggestions.
+        </Text>
+        <Text>
+          We'll also discuss average response times for different frameworks,
+          common causes for slowness, and how to scale your applications.
+        </Text>
+      </Box>
+    )
   },
   {
     title: "Getting Paid",
-    description:
-      "Now that you have some skills, it's time to start getting paid. This covers how to get hired or find contracts."
+    description: (
+      <Box>
+        <Text mt={4} mb={2}>
+          Now that you have some skills, it's time to start getting paid. This
+          covers how to get hired or find contracts.
+        </Text>
+        <Text>
+          We look at how to find opportunities, how to prep for interviews, and
+          how to get paid.
+        </Text>
+      </Box>
+    )
   }
 ];
 

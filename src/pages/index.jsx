@@ -537,7 +537,7 @@ const HomePage = () => {
                   The frameworks we work in (Next.js, Rails) have some security
                   built in and try to filter out dangerous requests. However,
                   you always needs to keep security in mind when handling
-                  sensitive data/
+                  sensitive data.
                 </Text>
               </Box>
               <Box>
