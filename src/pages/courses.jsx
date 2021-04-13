@@ -1,21 +1,92 @@
 import React from "react";
-import { jsx, Box, Heading, Text } from "theme-ui";
+import { jsx, Box, Heading, Text, Link } from "theme-ui";
 
 const courseData = [
   {
+    title: "Start Here If You're Brand New",
+    path: "/courses/welcome-to-software-development",
+    description: (
+      <Box>
+        <Text mt={4} mb={2}>
+          This is an overview of all things software development.
+        </Text>
+        <Text mb={2}>
+          It covers understanding the available technologies, career paths, and
+          job market.
+        </Text>
+        <Text>
+          We also get technical and start looking at computers, programs,
+          servers and the internet. We'll start installing tools, play with some
+          HTML/CSS/JS, and go over other important concepts.
+        </Text>
+      </Box>
+    )
+  },
+  {
     title: "Git & Github",
-    description:
-      "Learn the busics of Git and set up your Github account. Master git workflows to use versioncontrol to effectively manage your code."
+    path: "/courses/git-and-github",
+    description: (
+      <Box>
+        <Text mt={4} mb={2}>
+          {
+            "Git is the tool developers use to save their code. \nGitHub is the website where developers share code online."
+          }
+        </Text>
+        <Text mb={2}>
+          There are lots of ways to use Git but this course will cover using Git
+          from the command line because I believe it's the most valuable form to
+          know.
+        </Text>
+        <Text>
+          We cover important commands like git add, commit, and push. We look at
+          what exactly happens during a merge, rebase, and merge conflict. We
+          also cover how to get out of sticky situations and easy workflows to
+          manage your code.
+        </Text>
+      </Box>
+    )
   },
   {
     title: "Intro to Web Development",
-    description:
-      "New developers start here. Learn to build and deploy webpages using HTML, CSS, and JavaScript."
+    path: "/courses/intro-to-web-development",
+    description: (
+      <Box>
+        <Text mt={4} mb={2}>
+          Learn to build and deploy webpages using HTML, CSS, and JavaScript.
+        </Text>
+        <Text mb={2}>
+          We'll look at the HTML tags and CSS rules you need to know. We'll
+          practice building practical things like landing pages for apps,
+          restraunts, and other businesses. We'll also use JS to add some
+          interaction and fetch data for our sites.
+        </Text>
+        <Text>
+          This is a mixture of the core technologies (HTML/CSS/JS), tools
+          (Git/GitHub, debugging, search), and deployment processes (Heroku,
+          Netify, Vercel)
+        </Text>
+      </Box>
+    )
   },
   {
     title: "JavaScript and Node JS",
-    description:
-      "Strengthen your JavaScript fundamentals and build modern apps with just vanilla JavaScript."
+    path: "/courses/javascript-and-nodejs",
+    description: (
+      <Box>
+        <Text mt={4} mb={2}>
+          There's a lot to learn about JavaScript.
+        </Text>
+        <Text mb={2}>
+          This course strengthens your JS foundations (variables, loops, JSON)
+          and covers some more complex topics (events, listeners, asyn).
+        </Text>
+        <Text>
+          We'll look at Node.js and why we need it to build modern apps. We'll
+          use Express.js as a backend to provide data and functionality to our
+          web page.
+        </Text>
+      </Box>
+    )
   },
   {
     title: "Modern Apps in React",
@@ -47,10 +118,12 @@ const courseData = [
 const Course = props => {
   const { course } = props;
   return (
-    <Box className="course" bg="white" mx="auto" mb={[3, null, null, "40px"]}>
-      <Heading mb={2}>{course.title}</Heading>
-      <Text>{course.description}</Text>
-    </Box>
+    <Link href={course.path} sx={{ textDecoration: "none", color: "inherit" }}>
+      <Box className="course" bg="white" mx="auto" mb={[3, null, null, "40px"]}>
+        <Heading mb={2}>{course.title}</Heading>
+        <Text>{course.description}</Text>
+      </Box>
+    </Link>
   );
 };
 
