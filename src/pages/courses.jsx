@@ -197,10 +197,7 @@ const Course = props => {
   const { course, isLast } = props;
   return (
     <Grid variant="centered" mb={[isLast ? 0 : 3, null, null, "40px"]}>
-      <Link
-        href={course.path}
-        sx={{ textDecoration: "none", color: "inherit" }}
-      >
+      <Link to={course.path}>
         <Box className="course" bg="white">
           <Heading variant="h2" mb={2}>
             {course.title}
