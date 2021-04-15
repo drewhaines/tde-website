@@ -12,16 +12,16 @@ const Header = ({ siteTitle }) => (
           to="/"
           style={{
             color: "white",
-            textDecoration: "none",
+            textDecoration: "none"
           }}
         >
           <Box
             sx={{
-              maxWidth: ['85%', 450],
-              mx: 'auto',
+              maxWidth: ["85%", 450],
+              mx: "auto",
               mt: [2, 0],
-              transition: ['none', 'all 0.5s'],
-              '&:hover': {transform: [ 'none', 'scale(1.1, 1.1)']}
+              transition: ["none", "all 0.5s"],
+              "&:hover": { transform: ["none", "scale(1.1, 1.1)"] }
             }}
           >
             <StaticImage
@@ -29,7 +29,6 @@ const Header = ({ siteTitle }) => (
               alt="the dev experience - learn to code"
             />
           </Box>
-          
         </Link>
       </div>
     </div>
@@ -50,17 +49,22 @@ const Header = ({ siteTitle }) => (
             About
           </Link>
         </div>
+        <div>
+          <Link to="/hire" className="nav-item green">
+            Hire
+          </Link>
+        </div>
       </div>
     </div>
   </div>
 );
 
 Header.propTypes = {
-  siteTitle: PropTypes.string,
+  siteTitle: PropTypes.string
 };
 
 Header.defaultProps = {
-  siteTitle: "",
+  siteTitle: ""
 };
 
 export default Header;

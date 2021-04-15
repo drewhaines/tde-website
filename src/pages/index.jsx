@@ -3,12 +3,10 @@ import SEO from "../components/seo";
 import { StaticImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
 import {
-  jsx,
   Box,
   Container,
   Grid,
   Text,
-  Flex,
   Heading,
   Link as ThemeLink
 } from "theme-ui";
@@ -122,8 +120,8 @@ const HomePage = () => {
               </Box>
             </Grid>
           </Grid>
-          <Grid variant="centered" mt={0} pb={20} px={5}>
-            <Text variant="h1" sx={{ fontSize: ["30px", null, null, "40px"] }}>
+          <Grid variant="centered" mt={0} pb={10} px={5}>
+            <Text variant="h1" sx={{ fontSize: ["30px", null, null, "46px"] }}>
               What do I teach and why?
             </Text>
             <Grid
@@ -613,7 +611,7 @@ const HomePage = () => {
               </Box>
             </Grid>
           </Grid>
-          <Grid variant="centered" mt={10} pb={10} px={5}>
+          <Grid variant="centered" mt={10} pb={[5, null, null, 10]} px={5}>
             <Text variant="h1">Why learn from me?</Text>
             <Grid
               columns={["1fr", null, null, "auto 1fr"]}
@@ -622,7 +620,7 @@ const HomePage = () => {
               <Box sx={{ position: "relative", maxWidth: [400] }}>
                 <StaticImage src="../images/drew.jpg" alt="drew" />
               </Box>
-              <Box mb={[5, 0]} mr="auto">
+              <Box mb={[0, 0]} mr="auto">
                 <Text mb={2}>
                   Hey, I'm Drew <span className="margin_left_5">👋</span>
                 </Text>
@@ -679,7 +677,7 @@ const HomePage = () => {
                   to solve your own problems. You'll see exactly what I Google
                   and how I debug issues that come up.
                 </Text>
-                <Text mb={2}>
+                <Text mb={0}>
                   I give you the practical stuff you need to know and the
                   resources to learn more. This is the path I wish someone
                   taught me when I was learning to code.

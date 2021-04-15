@@ -150,7 +150,7 @@ export default {
       fontFamily: "heading",
       lineHeight: "heading",
       fontWeight: "heading",
-      fontSize: 4
+      fontSize: ["24px", null, 4]
     },
     h3: {
       fontFamily: "heading",

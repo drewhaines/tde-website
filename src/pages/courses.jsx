@@ -1,7 +1,7 @@
 import React from "react";
-import { jsx, Box, Heading, Text, Link } from "theme-ui";
+import { Box, Heading, Text, Link, Grid } from "theme-ui";
 
-const courseData = [
+export const courseData = [
   {
     title: "Start Here If You're Brand New",
     path: "/courses/welcome-to-software-development",
@@ -18,6 +18,28 @@ const courseData = [
           We also get technical and start looking at computers, programs,
           servers and the internet. We'll start installing tools, play with some
           HTML/CSS/JS, and go over other important concepts.
+        </Text>
+      </Box>
+    )
+  },
+  {
+    title: "Intro to Web Development",
+    path: "/courses/intro-to-web-development",
+    description: (
+      <Box>
+        <Text mt={4} mb={2}>
+          Learn to build and deploy webpages using HTML, CSS, and JavaScript.
+        </Text>
+        <Text mb={2}>
+          We'll look at the HTML tags and CSS rules you need to know. We'll
+          practice building practical things like landing pages for apps,
+          restraunts, and other businesses. We'll also use JS to add some
+          interaction and fetch data for our sites.
+        </Text>
+        <Text>
+          This is a mixture of the core technologies (HTML/CSS/JS), tools
+          (Git/GitHub, debugging, search), and deployment processes (Heroku,
+          Netify, Vercel)
         </Text>
       </Box>
     )
@@ -47,28 +69,6 @@ const courseData = [
     )
   },
   {
-    title: "Intro to Web Development",
-    path: "/courses/intro-to-web-development",
-    description: (
-      <Box>
-        <Text mt={4} mb={2}>
-          Learn to build and deploy webpages using HTML, CSS, and JavaScript.
-        </Text>
-        <Text mb={2}>
-          We'll look at the HTML tags and CSS rules you need to know. We'll
-          practice building practical things like landing pages for apps,
-          restraunts, and other businesses. We'll also use JS to add some
-          interaction and fetch data for our sites.
-        </Text>
-        <Text>
-          This is a mixture of the core technologies (HTML/CSS/JS), tools
-          (Git/GitHub, debugging, search), and deployment processes (Heroku,
-          Netify, Vercel)
-        </Text>
-      </Box>
-    )
-  },
-  {
     title: "JavaScript and Node JS",
     path: "/courses/javascript-and-nodejs",
     description: (
@@ -90,6 +90,7 @@ const courseData = [
   },
   {
     title: "Modern Apps in React",
+    path: "/courses/modern-apps-in-react",
     description: (
       <Box>
         <Text mt={4} mb={2}>
@@ -110,6 +111,7 @@ const courseData = [
   },
   {
     title: "Ruby on Rails",
+    path: "/courses/ruby-on-rails",
     description: (
       <Box>
         <Text mt={4} mb={2}>
@@ -130,6 +132,7 @@ const courseData = [
   },
   {
     title: "Security for Web Apps",
+    path: "/courses/security-for-web-apps",
     description: (
       <Box>
         <Text mt={4} mb={2}>
@@ -148,6 +151,7 @@ const courseData = [
   },
   {
     title: "Performance and Web Vitals",
+    path: "/courses/performance-and-web-vitals",
     description: (
       <Box>
         <Text mt={4} mb={2}>
@@ -168,15 +172,20 @@ const courseData = [
   },
   {
     title: "Getting Paid",
+    path: "/courses/getting-paid",
     description: (
       <Box>
         <Text mt={4} mb={2}>
-          Now that you have some skills, it's time to start getting paid. This
-          covers how to get hired or find contracts.
+          This covers how to get hired and find contracts.
+        </Text>
+        <Text mb={2}>
+          We look at how to find opportunities, how to prep for interviews, and
+          how to get paid. You'll want to be prepared for technical interviews
+          and ready to follow up afterwards.
         </Text>
         <Text>
-          We look at how to find opportunities, how to prep for interviews, and
-          how to get paid.
+          We'll compare employment vs freelancing/consulting and go over things
+          you want to keep in mind if you're building your own apps.{" "}
         </Text>
       </Box>
     )
@@ -184,14 +193,21 @@ const courseData = [
 ];
 
 const Course = props => {
-  const { course } = props;
+  const { course, isLast } = props;
   return (
-    <Link href={course.path} sx={{ textDecoration: "none", color: "inherit" }}>
-      <Box className="course" bg="white" mx="auto" mb={[3, null, null, "40px"]}>
-        <Heading mb={2}>{course.title}</Heading>
-        <Text>{course.description}</Text>
-      </Box>
-    </Link>
+    <Grid variant="centered" mb={[isLast ? 0 : 3, null, null, "40px"]}>
+      <Link
+        href={course.path}
+        sx={{ textDecoration: "none", color: "inherit" }}
+      >
+        <Box className="course" bg="white">
+          <Heading variant="h2" mb={2}>
+            {course.title}
+          </Heading>
+          <Text>{course.description}</Text>
+        </Box>
+      </Link>
+    </Grid>
   );
 };
 
@@ -199,16 +215,16 @@ const Courses = () => {
   return (
     <Box
       class="padding courses"
-      pt={[5, null, null, "50px"]}
-      pb={[5, null, null, "1px"]}
+      pt={[3, null, null, "50px"]}
+      pb={[3, null, null, "1px"]}
       px={3}
       sx={{
         backgroundColor: "#ffe0ff",
         backgroundImage: "linear-gradient(225deg, #ffe0ff 0%, #97D9E1 100%)"
       }}
     >
-      {courseData.map(course => (
-        <Course course={course} />
+      {courseData.map((course, index) => (
+        <Course {...{ course, isLast: index === courseData.length - 1 }} />
       ))}
     </Box>
   );
