@@ -1,5 +1,6 @@
 import React from "react";
-import { Box, Heading, Text, Link, Grid } from "theme-ui";
+import { Link } from "gatsby";
+import { Box, Heading, Text, Grid } from "theme-ui";
 
 export const courseData = [
   {
@@ -219,8 +220,9 @@ const Courses = () => {
       pb={[3, null, null, "1px"]}
       px={3}
       sx={{
-        backgroundColor: "#ffe0ff",
-        backgroundImage: "linear-gradient(225deg, #ffe0ff 0%, #97D9E1 100%)"
+        bg: "#ffe7e6"
+        // backgroundColor: "#ffe0ff",
+        // backgroundImage: "linear-gradient(45deg, #ffe0ff 20%, #ffe7e6 100%)"
       }}
     >
       {courseData.map((course, index) => (

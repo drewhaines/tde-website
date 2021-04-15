@@ -5,33 +5,38 @@ module.exports = {
     title: "The Dev Experience",
     description:
       "Become a highly skilled web developer. Learn modern technologies, build your own apps, and find work in the software industry.",
-    author: "@drewhaines3",
+    author: "@drewhaines3"
   },
   plugins: [
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [`Rowdies\:400,700`, "lato:400,700", "pacifico"],
-        display: "swap",
-      },
+        display: "swap"
+      }
     },
     "gatsby-plugin-theme-ui",
     {
       resolve: `gatsby-plugin-mdx`,
+      options: {
+        defaultLayouts: {
+          default: require.resolve("./src/components/blogpost-layout.js")
+        }
+      }
     },
     "gatsby-plugin-react-helmet",
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `pages`,
-        path: `${__dirname}/src/pages`,
-      },
+        path: `${__dirname}/src/pages`
+      }
     },
     {
       resolve: "gatsby-plugin-page-creator",
       options: {
-        path: `${__dirname}/src/pages/blogs`,
-      },
+        path: `${__dirname}/src/pages/blogs`
+      }
     },
     "gatsby-plugin-image",
     "gatsby-transformer-sharp",
@@ -45,11 +50,11 @@ module.exports = {
         background_color: "#323232",
         theme_color: "#663399",
         display: "minimal-ui",
-        icon: "src/images/tde_icon.jpg", // This path is relative to the root of the site.
-      },
-    },
+        icon: "src/images/tde_icon.jpg" // This path is relative to the root of the site.
+      }
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
-  ],
+  ]
 };
