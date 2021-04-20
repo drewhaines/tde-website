@@ -5,7 +5,12 @@ import { StaticImage } from "gatsby-plugin-image";
 
 const Blog = () => {
   return (
-    <Box bg="#fff9d6">
+    <Box
+      bg="#fff9d6"
+      sx={{
+        minHeight: ["calc(100vh - 170px)", null, null, "calc(100vh - 190px)"]
+      }}
+    >
       <Container>
         <Grid
           columns={["1fr", null, "1fr 1fr", "1fr 1fr 1fr"]}

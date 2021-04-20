@@ -1,7 +1,7 @@
 import { Link } from "gatsby";
 import { Box } from "theme-ui";
 import SEO from "../../components/seo";
-import CodeBlock from "../../components/CodeBlock";
+import CodeBlock from "../../components/code-block";
 import { StaticImage } from "gatsby-plugin-image";
 import { BlogDetails } from "../../components/blog-details";
 
@@ -11,9 +11,8 @@ import { BlogDetails } from "../../components/blog-details";
 <BlogDetails date="April 20th, 2021" time="3 min read" />
 
 
-<Box pb={[5]} />
-<StaticImage alt="test" src="../images/college-bootcamp-thumbnail.png" />
-<Box pb={[5, null, null, 10]} />
+<StaticImage style={{display: 'none'}} alt="test" src="../images/college-bootcamp-thumbnail.png" />
+<Box pb={10} />
 
 This is just a <a href="http://example.com/" target="_blank">test</a> to see if it works. Still building the site. 
 
@@ -21,9 +20,11 @@ This is just a <a href="http://example.com/" target="_blank">test</a> to see if 
 
 You can use `useEffect()` as a dope React hook.
 
-You can use `useEffect()` as a dope React hook.
+You can use `useState()` as a dope React hook.
 
-You can use `useEffect()` as a dope React hook.
+You can use `useReducer()` as a dope React hook.
+
+You can use `useCallback()` as a dope React hook.
 
 <br/>
 <br/>

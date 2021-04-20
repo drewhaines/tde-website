@@ -217,7 +217,8 @@ const Courses = () => {
       pb={[3, null, null, "1px"]}
       px={3}
       sx={{
-        bg: "#ffe7e6"
+        bg: "#ffe7e6",
+
         // backgroundColor: "#ffe0ff",
         // backgroundImage: "linear-gradient(45deg, #ffe0ff 20%, #ffe7e6 100%)"
       }}

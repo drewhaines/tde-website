@@ -8,7 +8,7 @@ export const BlogDetails = ({ date, time }) => {
       <Grid
         sx={{ alignItems: "end", gridGap: 1 }}
         columns={"auto auto 1fr"}
-        mb={1}
+        mb={"12px"}
       >
         <Box
           sx={{
@@ -34,8 +34,8 @@ export const BlogDetails = ({ date, time }) => {
         </Link>
         <span />
       </Grid>
-      <Text>🗓️ April 20th, 2021</Text>
-      <Text>⏱️ 3 min read</Text>
+      <Text mb={["6px", null, "3px"]}>🗓️ {` ${date}`}</Text>
+      <Text>⏱️ {` ${time}`}</Text>
     </Box>
   );
 };
