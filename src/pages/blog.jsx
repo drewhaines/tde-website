@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Box, Grid, Heading, Text } from "theme-ui";
 import { Link } from "gatsby";
-import { GatsbyImage, StaticImage } from "gatsby-plugin-image";
+import { StaticImage } from "gatsby-plugin-image";
 
 const Blog = () => {
   return (

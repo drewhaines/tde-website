@@ -6,10 +6,39 @@ export default ({ children }) => (
     bg="#fff9d6"
     sx={{
       height: ["calc(100vh - 170px)", null, null, "calc(100vh - 190px)"],
-      overflow: "auto"
+      overflow: "auto",
+      fontSize: ["20px"],
+      "&&& h1": {
+        fontSize: ["30px", null, null, "42px"]
+      },
+      "&&& h2": {
+        mb: 0
+      },
+      "&&& pre": {
+        pl: ["0px !important"]
+      },
+      "& pre span": {
+        fontSize: [2, null, null, 2]
+      },
+      "& p code": {
+        color: "dark",
+        bg: "#ff8d85",
+        fontSize: [2, null, null, 3]
+      },
+      "& a": {
+        color: "blue",
+        paddingBottom: "1px",
+        borderBottom: "1px solid",
+        borderColor: "blue"
+      }
     }}
   >
-    <Container sx={{ maxWidth: "800px" }} mt={[3, null, null, 10]} px={3}>
+    <Container
+      sx={{ maxWidth: "900px" }}
+      mt={[3, null, null, 10]}
+      px={3}
+      pb={[3, null, null, 10]}
+    >
       <div>{children}</div>
     </Container>
   </Box>

@@ -1,6 +1,90 @@
 import { Link } from "gatsby";
 import SEO from "../../components/seo";
+import CodeBlock from "../../components/CodeBlock";
+import { StaticImage } from "gatsby-plugin-image";
 
 <SEO title="College, Bootcamp, or Self-Taught" />
 
-# College, Bootcamp, or Self-Taught?
+# College, Bootcamp, or Self-Taught? 
+April 20th, 2021
+<br/>
+
+This is just a <a href="http://example.com/" target="_blank">test</a> to see if it works. Still building the site. 
+
+<br/>
+
+
+You can use `useEffect()` as a dope React hook.
+
+You can use `useEffect()` as a dope React hook.
+
+You can use `useEffect()` as a dope React hook.
+
+
+<br/>
+
+## Here is some code
+<CodeBlock
+  language={"jsx"}
+  value={`import { Link } from "gatsby";
+import React from "react";
+import { jsx, Box } from "theme-ui";
+import { StaticImage } from "gatsby-plugin-image";
+//
+const Header = ({ siteTitle }) => (
+  <div>
+    <div className="dark">
+      <div className="logo_wrapper">
+        <Link
+          to="/"
+          style={{
+            color: "white",
+            textDecoration: "none"
+          }}
+        >
+          <Box
+            sx={{
+              maxWidth: ["85%", 450],
+              mx: "auto",
+              mt: [2, 0],
+              transition: ["none", "all 0.5s"],
+              "&:hover": { transform: ["none", "scale(1.1, 1.1)"] }
+            }}
+          >
+            <StaticImage
+              src="../images/tde_logo_long_dark.png"
+              alt="the dev experience - learn to code"
+            />
+          </Box>
+        </Link>
+      </div>
+    </div>
+    <div className="nav_border">
+      <div className="nav_grid">
+        <div>
+          <Link to="/courses" className="nav-item red">
+            Courses
+          </Link>
+        </div>
+        <div>
+          <Link to="/blog" className="nav-item yellow">
+            Blog
+          </Link>
+        </div>
+        <div>
+          <Link to="/about" className="nav-item blue">
+            About
+          </Link>
+        </div>
+        <div>
+          <Link to="/hire" className="nav-item green">
+            Hire
+          </Link>
+        </div>
+      </div>
+    </div>
+  </div>
+);
+//
+export default Header;`}
+/>
