@@ -5,22 +5,16 @@ import { StaticImage } from "gatsby-plugin-image";
 
 const Blog = () => {
   return (
-    <Box
-      bg="#fff9d6"
-      sx={{
-        height: ["calc(100vh - 170px)", null, null, "calc(100vh - 190px)"],
-        overflow: "auto"
-      }}
-    >
+    <Box bg="#fff9d6">
       <Container>
         <Grid
           columns={["1fr", null, "1fr 1fr", "1fr 1fr 1fr"]}
           sx={{
-            maxWidth: 1000,
+            maxWidth: 1100,
             mx: "auto",
             px: 3,
-            mt: [3, null, null, 10],
-            mb: [2, null, null, 10],
+            pt: [3, null, null, 10],
+            pb: [2, null, null, 10],
             gridGap: [3, null, null, 5]
           }}
         >

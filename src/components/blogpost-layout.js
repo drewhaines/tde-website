@@ -5,8 +5,7 @@ export default ({ children }) => (
   <Box
     bg="#fff9d6"
     sx={{
-      height: ["calc(100vh - 170px)", null, null, "calc(100vh - 190px)"],
-      overflow: "auto",
+      minHeight: ["calc(100vh - 170px)", null, null, "calc(100vh - 190px)"],
       fontSize: ["20px"],
       "&&& h1": {
         fontSize: ["30px", null, null, "42px"]
@@ -35,7 +34,7 @@ export default ({ children }) => (
   >
     <Container
       sx={{ maxWidth: "900px" }}
-      mt={[3, null, null, 10]}
+      pt={[3, null, null, 10]}
       px={3}
       pb={[3, null, null, 10]}
     >
