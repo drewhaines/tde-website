@@ -216,12 +216,7 @@ const Courses = () => {
       pt={[3, null, null, "50px"]}
       pb={[3, null, null, "1px"]}
       px={3}
-      sx={{
-        bg: "#ffe7e6",
-
-        // backgroundColor: "#ffe0ff",
-        // backgroundImage: "linear-gradient(45deg, #ffe0ff 20%, #ffe7e6 100%)"
-      }}
+      className="main_section"
     >
       {courseData.map((course, index) => (
         <Course {...{ course, isLast: index === courseData.length - 1 }} />

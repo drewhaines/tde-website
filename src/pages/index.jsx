@@ -79,7 +79,7 @@ const HomePage = () => {
                 </Text>
                 <Text mb={7}>
                   {
-                    "Juniors to Mid-level make ~$65-90k in USA, CA. \nSeniors and Leads are closer to $100-150k in USA, CA. \nIt can be much more at high profile companies."
+                    "Juniors to Mid-level make ~$65-90k in CA, USA. \nSeniors and Leads are closer to $100-150k in CA, USA. \nIt can be much more at high profile companies."
                   }
                 </Text>
                 <Text variant="h2" mb={1}>
